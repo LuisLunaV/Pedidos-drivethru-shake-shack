@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Open+Sans&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@500&family=Prompt:wght@200;300;400;500;600;700&family=Roboto:wght@400;700;900&family=Share+Tech+Mono&family=Ubuntu:wght@300;400;500;700&family=VT323&display=swap);
+
+:root {
+  /* --primario:#95d701; */
+  --primario: #5e9e40;
+  --gris: #3b3b3b;
+  --blanco: #ffff;
+  --negro: #1f1e1e;
+  --grisClaro: #e1e1e1;
+
+  --separacion: 5rem;
+
+  --fuentePrincipal: "Roboto", sans-serif;
+  --fuenteSecundari: "Lato", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem -> 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--negro);
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
+}
+
+@media (min-width: 2160px) and (min-height: 3840px) {
+}
+
+.container {
+  height: 100%;
+}
+/* .logo-shake {
+  height: 12%;
+  width: 80%;
+  margin: 0 auto;
+} */
+/* Publicidad del producto */
+.div-product-advertising {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-product-advertising{
+  padding-left: 5rem;
+}
+.title-product-advertising h2{
+  color: var(--blanco);
+  font-size: 15rem;
+}
+ .products-shake {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+  margin: 0 5rem;
+}
+
+.card-product {
+  background-color: var(--blanco);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.div-product-img {
+  overflow: hidden;
+  width: 50%;
+}
+
+.div-product-img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.div-product-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.div-product-text h3 {
+  font-family: var(--fuenteSecundari);
+  font-size: 2.5rem;
+}
+.div-product-text .div-description p {
+  font-family: var(--fuentePrincipal);
+}
+
+.div-product-text .div-price p {
+  text-align: center;
+  background-color: var(--primario);
+  border-radius: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  max-width: 40%;
+}
+
+/* Productos populares */
+.div-product-recommendation{
+  height: 20%;
+}
+.title-product-recommendation h2 {
+  color: var(--blanco);
+  font-size: 13rem;
+  /* font-size: 6rem; */
+  padding-left: 5rem;
+
+}
+
+.div-card-recommendation{
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.div-card-recommendation ul{
+  display: flex;
+  animation: cambio 20s infinite
+  alternate linear;
+  width: 400%;
+}
+.div-card-recommendation li{
+  width: 100%;
+  list-style: none;
+}
+.div-card-recommendation img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cambio{
+  0%{ margin-left: 0%;}
+  20%{ margin-left: 0%;}
+
+  25%{ margin-left:-100%}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+
+
+
+}
+/* .card-recommendation{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+
+/* Order list y sugerencias */
+.div-orders-suggestion{
+  height: 35%;
+}
