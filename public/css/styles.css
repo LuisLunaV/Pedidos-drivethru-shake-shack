@@ -137,6 +137,10 @@ img {
   font-size: 13rem;
   margin: 0;
 }
+/* Opcional */
+.swiper-wrapper{
+  width: 45%;
+}
 
 .card-recommendation{
   height: auto;
@@ -152,6 +156,9 @@ img {
   align-items: center;
 }
 .img-recommendation{
+  position: relative;
+  z-index: 2;
+  left: 4rem;
   width: 28rem;
   height: 28rem;
   border-radius: 50%;
@@ -164,15 +171,29 @@ img {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.price-recommendation{
+  z-index: 1;
+  background-color: #5e9e40;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  padding: .3rem;
+  overflow: hidden;
+  padding-right: 1.5rem;
+}
 .price-recommendation p{
-  color: #e1e1e1;
+  width:100%;
+  height: 100%;
+  color: var(--blanco);
   font-family: var(--fuentePrecio);
   font-size: 7rem;
   font-weight: 800;
+  text-align:end;
 }
 
 .desc-recomendation p{
-  color: #e1e1e1;
+  color: var(--blanco);
   margin: 0;
   text-align: center;
   font-family: var(--fuenteSecundari);
