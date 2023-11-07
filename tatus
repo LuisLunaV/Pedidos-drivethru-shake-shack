@@ -1,0 +1,29 @@
+[33mcommit c1c4c148934f7d47e23b79a06745daf8e571db69[m[33m ([m[1;36mHEAD -> [m[1;32mpruebas[m[33m)[m
+Author: luislunav <luis.a.luna.v@outlook.com>
+Date:   Mon Nov 6 18:15:33 2023 -0600
+
+    Se agrega y termina el apartado order list
+
+[33mcommit 334534e9ccf5f3a0a2cd97840182e9a787b86dcc[m
+Author: luislunav <luis.a.luna.v@outlook.com>
+Date:   Mon Nov 6 12:42:55 2023 -0600
+
+    Se divide el css en distintos archivos dependiendo la seccion del menu
+
+[33mcommit 9af22076ced8b78ac640d395582ee827d5d5063c[m[33m ([m[1;31morigin/pruebas[m[33m, [m[1;32mmain[m[33m)[m
+Author: luislunav <luis.a.luna.v@outlook.com>
+Date:   Sun Nov 5 23:52:03 2023 -0600
+
+    Se completa el apartado del carrucel de recomendaciones
+
+[33mcommit 2a8628e3ee107edae8d723e70902bdc6743ccc8e[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: luislunav <luis.a.luna.v@outlook.com>
+Date:   Sun Nov 5 22:50:46 2023 -0600
+
+    Se agrega la libreria swiper.js para la animacion del carrucel
+
+[33mcommit cf6fb36c3848f6e54367c29561892cdabe945310[m
+Author: luislunav <luis.a.luna.v@outlook.com>
+Date:   Sun Nov 5 17:03:53 2023 -0600
+
+    Menu digital shake shack
