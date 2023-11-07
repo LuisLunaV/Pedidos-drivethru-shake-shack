@@ -1,15 +1,17 @@
 export function carousel() {
-  new Swiper(".swiper", {
-    // slidesPerView: 3,
-    // spaceBetween: 25,
-    // direction: "horizontal",
-    // loop: true,
-    // autoplay: {
-    //   delay: 5000,
-    // },
+  // MOdal publicitario
+  new Swiper(".swiper2",{
+    slidesPerView: 1,
+      // spaceBetween: 25,
+      direction: "horizontal",
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
 
-// **---------------**//
-    // swiper-wrapper
+    //Carrucel de rcomendados 
+  new Swiper(".swiper", {
     loop:true,
     autoplay:true,
     autoplayTimeout:2000,
@@ -31,4 +33,6 @@ export function carousel() {
     },
 
   });
+
+
 }
