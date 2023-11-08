@@ -15,7 +15,7 @@
   --fuenteSecundari: "Lato", sans-serif;
   --fuentePrecio: "Raleway", sans-serif;
 }
-
+/* Global */
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem -> 10px */
@@ -45,125 +45,13 @@ img {
 @media (min-width: 2160px) and (min-height: 3840px) {
 }
 
+/* Utils */
+
 .container {
-  /* overflow: hidden; */
   height: 100%;
-  /* margin-left: 5rem; */
 }
-/* .logo-shake {
-  height: 12%;
-  width: 80%;
-  margin: 0 auto;
-} */
-
-/* modal */
-.modal-publicidad{
-  background-color: #f7faff;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-.modal-publicidad img{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+.ocultar{
+  /* display: none; */
+  opacity: 0;
 }
 
-/* Modal order list */
-.modal-order-correct{
-  background-color: #f7faff;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-
-.title-logo-order-correct{
-height: 15%;
-background-color: var(--negro);
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-.text-order-correct{
-  width: 50%;
-}
-.text-order-correct h2{
-color: var(--blanco);
-  font-size: 12rem;
-  font-family: var(--fuenteSecundari);
-  font-weight: 700;
-  margin: 10rem;
-}
-.logo-order-correct{
-  width: 50%;
-  margin: auto 0;
-}
-.logo-order-correct img{
-  height: 50%;
-  width: 100%;
-}
-
-.content-order-correct{
-  height: 45%;
-  padding-top: 10rem;
-}
-
-.content-order-correct ul li{
-  margin-top: 5rem;
-  padding-right: 5rem;
-}
-.footer-order-correct{
-  background-color: var(--negro);
-  height: 40%;
-  padding: 10rem 0;
-}
-
-.footer-order-total{
-  height: 20%;
-  background-color: var(--primario);
-  border-radius: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5rem 5rem;
-  padding: 0 5rem;
-}
-
-.footer-order-total h2{
-  color: var(--blanco);
-  font-size: 10rem;
-  font-family: var(--fuenteSecundari);
-  font-weight: 700;
-}
-
-.footer-order-total p{
-  color: var(--blanco);
-  font-size: 10rem;
-  font-family: var(--fuentePrecio);
-  font-weight: 700;
-}
-
-.footer-order-title-one h2{
-  color: var(--blanco);
-  font-size: 12rem;
-  text-align: center;
-  margin: 0;
-  margin-top: 15rem;
-}
-
-.footer-order-icon{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 5rem;
-}
-
-.footer-order-title-two h3{
-  color: var(--blanco);
-  font-size: 10rem;
-  margin: 0;
-  text-align: center;
-}
