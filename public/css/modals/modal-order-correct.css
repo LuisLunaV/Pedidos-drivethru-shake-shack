@@ -1,0 +1,149 @@
+/* Modal order list */
+.modal-order-correct{
+    background-color: #f7faff;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .title-logo-order-correct{
+  height: 15%;
+  background-color: var(--negro);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .text-order-correct{
+    width: 50%;
+  }
+  .text-order-correct h2{
+  color: var(--blanco);
+    font-size: 12rem;
+    font-family: var(--fuenteSecundari);
+    font-weight: 700;
+    margin: 10rem;
+  }
+  .logo-order-correct{
+    width: 50%;
+    margin: auto 0;
+  }
+  .logo-order-correct img{
+    height: 50%;
+    width: 100%;
+  }
+  
+  .content-order-correct{
+    height: 45%;
+    padding-top: 10rem;
+  }
+  
+  .content-order-correct ul li{
+    margin-top: 5rem;
+    padding-right: 5rem;
+  }
+
+  .ulList-orders-correct{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  } 
+
+  .ulList-orders-correct li{
+    list-style: none;
+  } 
+  .ulList-orders-li-correct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;;
+  }
+
+  .ulList-orders-li-correct .order-amount-correct{
+    background-color: var(--primario);
+    border-top-right-radius: 3rem; /* Ajusta el valor según tus preferencias */
+    border-bottom-right-radius: 3rem; 
+    width: 10%;
+  }
+  .ulList-orders-li-correct .order-amount-correct h2{
+    color: var(--blanco);
+    font-size: 10rem;
+    margin: 0;
+    text-align: end;
+    padding-right: 8rem;
+  }
+
+  .ulList-orders-li-correct .order-type-correct h3{
+    font-family: var(--fuenteSecundaria);
+    font-size: 10rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .ulList-orders-li-correct .order-price-correct{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 15%;
+  }
+  .ulList-orders-li-correct .order-price-correct p, span{
+    font-family: var(--fuentePrecio);
+    font-size: 10rem;
+    font-weight: 700;
+    margin: 0;
+
+  }
+
+  .footer-order-correct{
+    background-color: var(--negro);
+    height: 40%;
+    padding: 10rem 0;
+  }
+  
+  .footer-order-total{
+    height: 20%;
+    background-color: var(--primario);
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 5rem;
+    padding: 0 5rem;
+  }
+  
+  .footer-order-total h2{
+    color: var(--blanco);
+    font-size: 10rem;
+    font-family: var(--fuenteSecundari);
+    font-weight: 700;
+  }
+  
+  .footer-order-total p{
+    color: var(--blanco);
+    font-size: 10rem;
+    font-family: var(--fuentePrecio);
+    font-weight: 700;
+  }
+  
+  .footer-order-title-one h2{
+    color: var(--blanco);
+    font-size: 12rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 15rem;
+  }
+  
+  .footer-order-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .footer-order-title-two h3{
+    color: var(--blanco);
+    font-size: 10rem;
+    margin: 0;
+    text-align: center;
+  }
