@@ -1,4 +1,4 @@
-import{ Server }from'./js/model/server.class.js';
+import{ Main }from'./js/model/main.class.js';
 
-const server = new Server();
-server.init();
+const main = new Main();
+main.init();
