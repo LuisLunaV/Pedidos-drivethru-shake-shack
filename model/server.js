@@ -14,11 +14,20 @@ class Server {
     };
 
     this.middlewares();
+    this.sockets();
   }
   middlewares() {
+    this.app.use(cors());
     this.app.use(express.json());
     this.app.use(express.static("public"));
   }
+
+  sockets(){
+    this.io.on("connection", ()=>{
+      console.log("conectado desde back")
+    });
+  }
+
   router(){
     this.app.use( this.path.mainAdvertising,)
   }
