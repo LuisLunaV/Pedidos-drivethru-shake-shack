@@ -50,8 +50,10 @@ img {
 .container {
   height: 100%;
 }
-.ocultar{
-  /* display: none; */
+.ocultar-advertising{
   opacity: 0;
+}
+.ocultar-order-list{
+  /* opacity: 0; */
 }
 
