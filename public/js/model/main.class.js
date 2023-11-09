@@ -2,6 +2,7 @@ import {
   carousel,
   addOrdersListHtml,
   addOrdersListCorrectHtml,
+  socketsConnection
 } from "../index.js";
 const producto = [
   {
@@ -35,6 +36,7 @@ class Main {
   init() {
     this.swiper();
     this.printOrderList();
+    this.socket();
   }
   printOrderList() {
  
@@ -42,6 +44,9 @@ class Main {
       addOrdersListHtml(data);
       addOrdersListCorrectHtml(data);
     });
+  }
+  socket(){
+    socketsConnection()
   }
   swiper() {
     carousel();
