@@ -1,52 +1,41 @@
+import { recomendations, populars, producto } from "../db/products.js";
+import { getOrderList } from "../services/api-call.js";
 import {
   carousel,
   addOrdersListHtml,
   addOrdersListCorrectHtml,
-  socketsConnection
+  addRecomendatiosHtml,
+  addPopularsHtml,
+  socketsConnection,
 } from "../index.js";
-const producto = [
-  {
-    cantidad: 1,
-    description: "Sweet Classic - Combo",
-    precio: 10.00,
-  },
-  {
-    cantidad: 2,
-    description: "Winky Brownie",
-    precio: 3.50,
-  },
-  {
-    cantidad: 3,
-    description: "Orange Juice",
-    precio: 5.50,
-  },
-  {
-    cantidad: 1,
-    description: "Coca cola",
-    precio: 5,
-  },
-  {
-    cantidad: 2,
-    description: "Alitas",
-    precio: 5,
-  },
-];
 
 class Main {
   init() {
-    this.swiper();
     this.printOrderList();
+    this.printRecomendations();
+    this.printPopulars();
     this.socket();
+    // this.servicesApi();
+    // Agregamos los efectos de swiper hasta que se impriman todos los componentes en html
+    this.swiper();
+  }
+  printRecomendations() {
+    recomendations.forEach(addRecomendatiosHtml);
+  }
+  printPopulars() {
+    populars.forEach(addPopularsHtml);
   }
   printOrderList() {
- 
     producto.forEach((data) => {
       addOrdersListHtml(data);
       addOrdersListCorrectHtml(data);
     });
   }
-  socket(){
-    socketsConnection()
+  socket() {
+    socketsConnection();
+  }
+  servicesApi(){
+    getOrderList();
   }
   swiper() {
     carousel();
