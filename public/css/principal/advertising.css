@@ -12,7 +12,7 @@
   .title-product-advertising h2{
     margin: 9rem 0;
     color: var(--negro);
-    font-size: 15rem;
+    font-size: 8rem;
   }
    .products-shake {
     display: grid;
@@ -34,7 +34,7 @@
   
   .div-product-img {
     overflow: hidden;
-    width: 50%;
+    width: 40%;
   }
   
   .div-product-img img {
@@ -51,12 +51,12 @@
   .div-product-text h3 {
     margin: 2rem 0;
     font-family: var(--fuenteSecundari);
-    font-size: 6.5rem;
+    font-size: 3rem;
   }
   .div-product-text .div-description p {
     margin:0;
     font-family: var(--fuentePrincipal);
-    font-size: 4rem;
+    font-size: 1rem;
   
   }
   
@@ -65,7 +65,7 @@
     background-color: var(--primario);
     border-radius: 1rem;
     font-family: var(--fuentePrecio);
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 600;
     max-width: 50%;
     text-align: center;

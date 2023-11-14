@@ -28,7 +28,7 @@ class Server {
   sockets(){
     this.io.on("connection", (socket) =>{
       socket.on("nuevo-pedido", (datos)=>{
-        
+        console.log(datos)
         socket.emit("imprimir-pedido", datos );
       })
     });

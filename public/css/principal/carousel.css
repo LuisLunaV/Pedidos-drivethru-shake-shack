@@ -4,12 +4,12 @@
     height: 20%;
   }
   .title-product-recommendation{
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
   .title-product-recommendation h2{
     color: white;
-    font-size: 13rem;
-    margin: 4rem 0;
+    font-size: 7rem;
+    margin: 1rem 0;
     /* margin: 0; */
   }
   /* Opcional */
@@ -34,8 +34,8 @@
     position: relative;
     z-index: 2;
     left: 4rem;
-    width: 28rem;
-    height: 28rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     padding: .3rem;
     overflow: hidden;
@@ -50,13 +50,13 @@
   .price-recommendation{
     z-index: 1;
     background-color: var(--primario);
-    width: 28rem;
-    height: 28rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     padding: .3rem;
     overflow: hidden;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding-right: 3.4rem;
+    padding-left: 3.4rem; 
     padding-top: 5rem;
   }
   .price-recommendation p{
@@ -65,9 +65,10 @@
     color: var(--blanco);
     /* color: var(--negro); */
     font-family: var(--fuentePrecio);
-    font-size: 7rem;
+    font-size: 3.8rem;
     font-weight: 800;
     text-align:end;
+    margin: 0;
   }
   
   .desc-recomendation p{
@@ -75,7 +76,7 @@
     margin: 0;
     text-align: center;
     font-family: var(--fuenteSecundari);
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 700;
   }
  
