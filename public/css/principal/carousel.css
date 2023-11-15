@@ -33,9 +33,9 @@
   .img-recommendation{
     position: relative;
     z-index: 2;
-    left: 4rem;
-    width: 12rem;
-    height: 12rem;
+    left: 2rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     padding: .3rem;
     overflow: hidden;
@@ -50,13 +50,13 @@
   .price-recommendation{
     z-index: 1;
     background-color: var(--primario);
-    width: 12rem;
-    height: 12rem;
+    width: 9.5rem;
+    height: 9.5rem;
     border-radius: 50%;
-    padding: .3rem;
+    /* padding: .3rem; */
     overflow: hidden;
-    padding-right: 3.4rem;
-    padding-left: 3.4rem; 
+    padding-right: 3rem;
+    padding-left: 2rem; 
     padding-top: 5rem;
   }
   .price-recommendation p{
@@ -65,9 +65,9 @@
     color: var(--blanco);
     /* color: var(--negro); */
     font-family: var(--fuentePrecio);
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     font-weight: 800;
-    text-align:end;
+    text-align:center;
     margin: 0;
   }
   
@@ -76,7 +76,7 @@
     margin: 0;
     text-align: center;
     font-family: var(--fuenteSecundari);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
   }
  

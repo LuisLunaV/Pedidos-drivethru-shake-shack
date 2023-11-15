@@ -86,7 +86,7 @@
   .order-list-total{
     color: var(--blanco);
     background-color: var(--negro);
-    bottom: 5rem;
+    bottom: 2.5rem;
     border-top-right-radius: 20rem; /* Ajusta el valor según tus preferencias */
     border-bottom-right-radius: 20rem; 
     height: 5.5%;

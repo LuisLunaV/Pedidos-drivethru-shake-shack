@@ -40,7 +40,7 @@
   }
   
   .content-order-correct ul li{
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding-right: 5rem;
   }
 
@@ -63,8 +63,8 @@
 
   .ulList-orders-li-correct .order-amount-correct{
     background-color: var(--primario);
-    border-top-right-radius: 3rem; /* Ajusta el valor según tus preferencias */
-    border-bottom-right-radius: 3rem; 
+    border-top-right-radius: 1.5rem; /* Ajusta el valor según tus preferencias */
+    border-bottom-right-radius: 1.5rem; 
     width: 10%;
     padding-left: 3rem;
   }
