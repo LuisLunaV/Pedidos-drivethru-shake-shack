@@ -1,14 +1,14 @@
 
-const precios =[];
-
 export const getTotal = (data) => {
-  precios.push([data.cantidad, data.precio]);
-  const plus = precios
-    .map((value) => {
-      return value[0] * value[1];
-    })
-    .reduce((acc, value) => {
-      return acc + value;
-    });
-  return plus.toFixed(2);
+
+  if( !data )return;
+
+  const result = data.map( value =>{
+    return [value.cantidad * value.precio]
+  }).reduce(( acc, value )=>{
+    return acc + Number( value );
+  },0);
+
+  return result;
+
 };

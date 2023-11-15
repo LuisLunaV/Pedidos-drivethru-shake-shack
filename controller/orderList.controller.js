@@ -1,34 +1,27 @@
-const { request, response } = require('express');
-
+const { request, response, json } = require("express");
 
 const ordersList = {
 
-    postOrderList: ( req = request, res = response  ) =>{
-        try {
-            const body = req.body;
-          
-            ordersList.emitToPrintOrder( body );
-           return res.status(200).json({
-                 msg: body 
-                });
-            
-        } catch (error) {
-            res.status(500).json({ error: "Error en el servidor" });
-        }
-    },
+  postOrderList: (req = request, res = response) => {
+    try {
+      const body = req.body;
 
-    socketsController:( socket )=>{
-        ordersList.emitToPrintOrder = (data) =>{
+      ordersList.emitToPrintOrder( body );
 
-            socket.emit("imprimir-pedido", data );
-        }
-     
-            socket.on("nuevo-pedido", (datos)=>{
-          
-            })            
-     
+      res.status(200).json({
+        msg: body
+      });
 
+    } catch (error) {
+      res.status(500).json({ error: "Error en el servidor" });
     }
-}
+  },
 
-module.exports = ordersList
+  socketsController: ( socket ) => {
+    ordersList.emitToPrintOrder = ( data ) => {
+      socket.emit( "imprimir-pedido", data );
+    };
+  },
+};
+
+module.exports = ordersList;

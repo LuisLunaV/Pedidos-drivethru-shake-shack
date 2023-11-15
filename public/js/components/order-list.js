@@ -1,10 +1,7 @@
-import { getTotal } from "../index.js";
 
 const ulListOrders        = document.querySelector(".ulList-orders");
 const ulListOrdersCorrect = document.querySelector(".ulList-orders-correct");
 
-const total               = document.querySelector(".amount-total-total h2");
-const totalModal          = document.querySelector(".footer-order-total p");
 
 const addOrdersListHtml = ( data ) => {
   const html = `<li class="ulList-orders-li">
@@ -23,10 +20,7 @@ const addOrdersListHtml = ( data ) => {
 
   ulListOrders.innerHTML += html;
   
-  const result = getTotal( data );
-
-  total.innerText      = `$${ result }`;
-  totalModal.innerText = `$${ result }`;
+  
 };
 
 const addOrdersListCorrectHtml = ( data ) => {
@@ -45,4 +39,9 @@ const addOrdersListCorrectHtml = ( data ) => {
   ulListOrdersCorrect.innerHTML += html;
 };
 
-export { addOrdersListHtml, addOrdersListCorrectHtml };
+const clearOrderList=()=>{
+  ulListOrders.innerHTML = "";
+  ulListOrdersCorrect.innerHTML = "";
+}
+
+export { addOrdersListHtml, addOrdersListCorrectHtml, clearOrderList };

@@ -7,6 +7,7 @@ import {
   addRecomendatiosHtml,
   addPopularsHtml,
   socketsConnection,
+  printNewOrder
 } from "../index.js";
 
 class Main {
@@ -26,10 +27,7 @@ class Main {
     populars.forEach(addPopularsHtml);
   }
   printOrderList() {
-    producto.forEach((data) => {
-      addOrdersListHtml(data);
-      addOrdersListCorrectHtml(data);
-    });
+    printNewOrder();
   }
   socket() {
     socketsConnection();
