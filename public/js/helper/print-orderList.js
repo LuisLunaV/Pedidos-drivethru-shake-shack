@@ -5,6 +5,8 @@ export const printNewOrder =( newOrder )=>{
 
     clearOrderList();
     
+    showAdvertisingModal();
+
     newOrder.forEach( data => {
         // console.log(data)
         data.precio = parseInt( data.precio)
@@ -14,4 +16,16 @@ export const printNewOrder =( newOrder )=>{
 
     addTotals( newOrder );
 
+}
+
+function showAdvertisingModal(){
+    const advertisingModal = document.querySelector(".modal-publicidad");
+    
+    //Ocultamos la publicidad
+    advertisingModal.classList.add('ocultar-advertising');
+
+    //Despues de diez segundos de inactividad agregamos nuevamente la publicidad
+    setTimeout(()=>{
+    advertisingModal.classList.remove('ocultar-advertising')
+    },10000);
 }
