@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
+const { socketsController } = require("../controller/orderList.controller.js");
 
 class Server {
   constructor() {
@@ -26,12 +27,7 @@ class Server {
   }
 
   sockets(){
-    this.io.on("connection", (socket) =>{
-      socket.on("nuevo-pedido", (datos)=>{
-        console.log(datos)
-        socket.emit("imprimir-pedido", datos );
-      })
-    });
+    this.io.on("connection", socketsController );
   }
 
   router(){
