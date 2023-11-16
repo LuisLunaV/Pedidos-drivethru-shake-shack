@@ -13,7 +13,7 @@ const addOrdersListHtml = ( data ) => {
                   <ul class="ul-order-content"></ul>
                 </div>
                 <div class="order-price">
-                 <span>$</span><p>${ data.precio.toFixed(2) }</p>
+                 <p>$${ data.precio.toFixed(2) }</p>
                 </div>
               </li>
     `;

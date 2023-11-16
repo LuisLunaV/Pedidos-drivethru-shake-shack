@@ -58,3 +58,9 @@ img {
   opacity: 0;
 }
 
+.gap-0{
+  gap: .3 !important;
+}
+.height-min{
+  font-size: 4rem !important;
+}

@@ -75,7 +75,7 @@
     align-items: center;
     width: 20%;
   }
-  .ulList-orders-li .order-price p, span{
+  .ulList-orders-li .order-price p{
     font-family: var(--fuentePrecio);
     font-size: 5rem;
     font-weight: 700;
