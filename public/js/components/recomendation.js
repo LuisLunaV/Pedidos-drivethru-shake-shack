@@ -1,6 +1,5 @@
 const divProductsShake = document.querySelector(".products-shake");
 export const addRecomendatiosHtml =( data )=>{
-// console.log(data)
 const html = `
 <div class="card-product" data-id="1">
 <div class="div-product-img">

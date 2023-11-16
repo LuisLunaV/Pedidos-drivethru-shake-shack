@@ -5,6 +5,8 @@
     position: fixed;
     width: 100%;
     z-index: 3;
+    transition: all 500ms ease;
+      transform: translateY(0%);
   }
   .modal-publicidad img{
     object-fit: cover;

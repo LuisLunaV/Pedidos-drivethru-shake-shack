@@ -1,7 +1,7 @@
 import { addOrdersListHtml, addOrdersListCorrectHtml, clearOrderList } from "./components/order-list.js";
 import { addRecomendatiosHtml } from "./components/recomendation.js";
 import { addPopularsHtml } from "./components/populars.js";
-import { addTotals } from "./components/totals.js";
+import { addTotals, clearTotals } from "./components/totals.js";
 
 import { carousel } from "./util/swiper.js";
 import { socketsConnection } from "./services/socket.cliente.js";
@@ -16,6 +16,7 @@ export{
     addRecomendatiosHtml,
     addPopularsHtml,
     addTotals,
+    clearTotals,
     carousel,
     getTotal,
     socketsConnection,

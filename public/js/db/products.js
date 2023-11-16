@@ -1,25 +1,3 @@
-const populars = [
-  {
-    "img": "FrozenHotChocolate.jpeg",
-    "nombre": "Frozen Hot Chocolate",
-    "precio": 185
-  },
-  {
-    "img": "Gingerbread.jpeg",
-    "nombre": "Gingerbread",
-    "precio": 185
-  },
-  {
-    "img": "PapasTrufa.jpeg",
-    "nombre": "Papas Garlic Parmesan",
-    "precio": 135
-  },
-  {
-    "img": "Trufa.jpeg",
-    "nombre": "Black Truffle Burger",
-    "precio": 195
-  },
-];
 
 const recomendations = [
   {
@@ -54,40 +32,32 @@ const recomendations = [
   }
 ];
 
-
-const producto = [
+const populars = [
   {
-    cantidad: 1,
-    description: "Sweet Classic - Combo",
-    precio: 10.00,
-    productos:[
-      "sweet clasic",
-      "sweet potato fries",
-      "ice te"
-]
+    "img": "FrozenHotChocolate.jpeg",
+    "nombre": "Frozen Hot Chocolate",
+    "precio": 185
   },
   {
-    cantidad: 2,
-    description: "Winky Brownie",
-    precio: 3.50,
-    producto:[]
+    "img": "Gingerbread.jpeg",
+    "nombre": "Gingerbread",
+    "precio": 185
   },
   {
-    cantidad: 3,
-    description: "Orange Juice",
-    precio: 5.50,
-    producto:[]
-
+    "img": "PapasTrufa.jpeg",
+    "nombre": "Papas Garlic Parmesan",
+    "precio": 135
   },
   {
-    cantidad: 1,
-    description: "Coca cola",
-    precio: 5,
-    producto:[]
+    "img": "Trufa.jpeg",
+    "nombre": "Black Truffle Burger",
+    "precio": 195
   },
 ];
+
+
+
 export{
-  producto,
   populars,
   recomendations
 }
