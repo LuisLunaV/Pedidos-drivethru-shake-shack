@@ -37,6 +37,7 @@
   }
   
   .content-order-correct{
+    overflow: scroll;
     height: 45%;
     padding-top: 1rem;
   }

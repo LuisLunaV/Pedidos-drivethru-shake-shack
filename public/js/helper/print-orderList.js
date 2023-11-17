@@ -8,7 +8,11 @@ import {
   
   // Elementos del DOM
   const advertisingModal = document.querySelector(".modal-publicidad");
-  const confirmedModal = document.querySelector(".modal-order-correct");
+  const confirmedModal   = document.querySelector(".modal-order-correct");
+
+  const amountProducts   = document.querySelector(".amount-products");
+  const amountProductsP   = document.querySelector(".amount-products p");
+
   let timer;
   
   // Función principal para imprimir una nueva orden
@@ -31,6 +35,9 @@ import {
   
   // Función para renderizar las órdenes
   function renderOrders(newOrder) {
+    
+    showAmountOrders( newOrder );
+
     newOrder.forEach((data) => {
       data.precio = parseInt(data.precio);
       addOrdersListHtml(data);
@@ -50,6 +57,7 @@ import {
     timer = setTimeout(() => {
       hideConfirmationModal();
       showAdvertisingModal();
+      clearAmountOrders();
       clearOrderList();
       clearTotals();
     }, 15000);
@@ -63,11 +71,21 @@ import {
     // Mostrar la publicidad después de un tiempo
     timer = setTimeout(() => {
       showAdvertisingModal();
+      clearAmountOrders();
       clearOrderList();
       clearTotals();
     }, 90000);
   }
   
+  //Mostrar esfera con la cantidad de productos
+  function showAmountOrders( orders ){
+    const amount = orders.reduce( (acc, value )=>{
+     return acc + Number( value.cantidad );
+    }, 0)
+    amountProducts.classList.add("show-amount");
+    amountProductsP.innerText = amount;
+  }
+
   // Función para ajustar el tamaño de la lista de órdenes
   function adjustListSize(list) {
     if (list.length > 4) {
@@ -90,12 +108,21 @@ import {
   function addPublicity() {
     hideConfirmationModal();
     showAdvertisingModal();
+    clearAmountOrders();
+    clearOrderList();
+    clearTotals();
   }
   
   function removePublicity() {
     hideAdvertisingModal();
   }
-  
+
+  //Ocultamos y reseteamos el elemento de cantidad de productos
+  function clearAmountOrders(){
+    amountProducts.classList.remove("show-amount");
+    amountProductsP.innerText = 0;
+  }
+
   // Funciones para mostrar/ocultar la ventana de confirmación
   function showConfirmationModal() {
     confirmedModal.classList.remove("ocultar-order-list");

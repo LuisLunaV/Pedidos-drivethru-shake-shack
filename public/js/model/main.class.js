@@ -2,8 +2,6 @@ import { recomendations, populars } from "../db/products.js";
 import { getOrderList } from "../services/api-call.js";
 import {
   carousel,
-  addOrdersListHtml,
-  addOrdersListCorrectHtml,
   addRecomendatiosHtml,
   addPopularsHtml,
   socketsConnection,
