@@ -61,7 +61,6 @@ import {
       clearOrderList();
       clearTotals();
     }, 15000);
-
   }
   
   // Función para mostrar el menú principal

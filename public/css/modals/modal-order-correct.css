@@ -70,7 +70,7 @@
   align-items: center;
 }
 .ul-order-content-correct{
-  padding-left: 21rem;
+  padding-left: 16rem;
 }
 .ul-order-content-correct li{
   color: var(--gris);
@@ -83,7 +83,7 @@
     background-color: var(--primario);
     border-top-right-radius: 1.5rem; /* Ajusta el valor según tus preferencias */
     border-bottom-right-radius: 1.5rem; 
-    width: 10%;
+    width: 9%;
     padding-left: 3rem;
   }
   .order-amount-correct h2{
@@ -94,11 +94,11 @@
     padding-right: 8rem;
   }
  .order-type-correct{
-    width: 60%;
+    width: 70%;
   }
 .order-type-correct h3{
     font-family: var(--fuenteSecundaria);
-    font-size: 5rem;
+    font-size: 4rem;
     /* font-weight: 400; */
   font-weight: 600;
     margin: 0;
