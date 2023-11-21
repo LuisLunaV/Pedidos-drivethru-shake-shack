@@ -43,14 +43,14 @@
   }
   
   .content-order-correct ul li{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     padding-right: 5rem;
   }
 
   .ulList-orders-correct{
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: 1rem;
     padding: 0;
   } 
 
@@ -78,17 +78,20 @@
     text-align: end;
     padding-right: 8rem;
   }
-
+  .ulList-orders-li-correct .order-type-correct{
+    width: 60%;
+  }
   .ulList-orders-li-correct .order-type-correct h3{
     font-family: var(--fuenteSecundaria);
     font-size: 5rem;
-    font-weight: 400;
+    /* font-weight: 400; */
+  font-weight: 600;
     margin: 0;
   }
   .ulList-orders-li-correct .order-price-correct{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
     width: 15%;
   }

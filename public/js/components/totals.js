@@ -7,8 +7,8 @@ const addTotals = (data) => {
 
   const result = getTotal(data);
 
-  total.innerText      = `$${result}`;
-  totalModal.innerText = `$${result}`;
+  total.innerText      = `$${result.toFixed(2)}`;
+  totalModal.innerText = `$${result.toFixed(2)}`;
 };
 
 const clearTotals =() => {

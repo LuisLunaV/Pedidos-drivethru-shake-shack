@@ -7,7 +7,7 @@ import { carousel } from "./util/swiper.js";
 import { socketsConnection } from "./services/socket.cliente.js";
 
 import { getTotal } from "./helper/calculateTheTotal.js";
-import { printNewOrder } from "./helper/print-orderList.js";
+import { printNewOrder } from "./controller/order-controller.js";
 
 export{
     addOrdersListHtml,

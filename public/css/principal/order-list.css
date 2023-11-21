@@ -73,11 +73,25 @@
 }
 .ulList-orders-li {
   display: flex;
+  flex-direction: column;
+}
+
+/* ***** Extras ***** */
+.ulList-orders-li-div{
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+.ul-order-content{
+  padding-left: 17rem;
+}
+.ul-order-content li{
+  color: var(--gris);
+  font-size: 3rem;
+}
 
+/* ************** */
 .ulList-orders-li .order-amount {
   background-color: var(--primario);
   border-top-right-radius: 1.5rem; /* Ajusta el valor según tus preferencias */
@@ -92,7 +106,7 @@
   padding-right: 4.5rem;
 }
 .ulList-orders-li .order-type{
-  width: 60%;
+  width: 65%;
 }
 .ulList-orders-li .order-type h3 {
   font-family: var(--fuenteSecundaria);
@@ -105,6 +119,7 @@
   flex-direction: row;
   justify-content: end;
   align-items: center;
+  padding-right: 5rem;
   width: 20%;
 }
 .ulList-orders-li .order-price p {

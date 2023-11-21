@@ -61,6 +61,7 @@ import {
       clearOrderList();
       clearTotals();
     }, 15000);
+
   }
   
   // Función para mostrar el menú principal
@@ -125,19 +126,31 @@ import {
 
   // Funciones para mostrar/ocultar la ventana de confirmación
   function showConfirmationModal() {
-    confirmedModal.classList.remove("ocultar-order-list");
+    confirmedModal.classList.remove("display-off");
+    setTimeout(()=>{
+      confirmedModal.classList.remove("ocultar-order-list");
+    },500)
   }
   
   function hideConfirmationModal() {
     confirmedModal.classList.add("ocultar-order-list");
+    confirmedModal.classList.add("display-off");
+
   }
   
   // Funciones para mostrar/ocultar la publicidad
   function showAdvertisingModal() {
-    advertisingModal.classList.remove("ocultar-advertising");
+    advertisingModal.classList.remove("display-off");
+      advertisingModal.classList.remove("ocultar-advertising");
+      setTimeout(()=>{
+        location.reload();
+      },1000);
   }
   
   function hideAdvertisingModal() {
     advertisingModal.classList.add("ocultar-advertising");
+    setTimeout(()=>{
+      advertisingModal.classList.add("display-off");
+    },1000)
   }
   
