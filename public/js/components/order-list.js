@@ -23,19 +23,19 @@ const addOrdersListHtml = (data) => {
 };
 
 const addOrdersListCorrectHtml = (data) => {
-  const html = `<li class="ulList-orders-li">
+  const html = `<li class="ulList-orders-li-correct">
   <div class="ulList-orders-li-div">
-  <div class="order-amount">
+  <div class="order-amount-correct">
     <h2 class="height-min">${data.cantidad}</h2>
   </div>
-  <div class="order-type">
+  <div class="order-type-correct">
     <h3>${data.description}</h3>
   </div>
-  <div class="order-price">
+  <div class="order-price-correct">
    <p class="height-min">$${data.precio.toFixed(2)}</p>
   </div>
 </div>
-  <ul class="ul-order-content">
+  <ul class="ul-order-content-correct">
   ${data.productos ? generateListOfExtras(data.productos) : ""}
   </ul>
 </li>`;
