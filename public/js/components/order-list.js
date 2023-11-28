@@ -15,7 +15,7 @@ const addOrdersListHtml = (data) => {
     </div>
   </div>
     <ul class="ul-order-content">
-    ${data.productos ? generateListOfExtras(data.productos) : ""}
+    ${data.modificadores ? generateListOfExtras(data.modificadores) : ""}
     </ul>
   </li>
 `;
@@ -36,7 +36,7 @@ const addOrdersListCorrectHtml = (data) => {
   </div>
 </div>
   <ul class="ul-order-content-correct">
-  ${data.productos ? generateListOfExtras(data.productos) : ""}
+  ${data.modificadores ? generateListOfExtras(data.modificadores) : ""}
   </ul>
 </li>`;
   ulListOrdersCorrect.innerHTML += html;

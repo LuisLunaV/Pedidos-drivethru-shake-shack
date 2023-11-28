@@ -7,7 +7,6 @@ socket.on("imprimir-pedido-uno",( pedido )=>{
 });
 
 socket.on("imprimir-pedido-dos",( pedido )=>{
-    console.log(pedido)
     printNewOrder( pedido );
 });
 
