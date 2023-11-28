@@ -18,7 +18,7 @@
     justify-content: center;
   }
   .modal-publicidad-dos img{
-    object-fit:scale-down;
+    /* object-fit:cover; */
     height: 100%;
     width: 100%;
   }
