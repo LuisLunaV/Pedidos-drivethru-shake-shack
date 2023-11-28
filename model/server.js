@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 
-const { socketsController } = require("../controller/orderList.controller.js");
+const { socketsControllerUno } = require("../controller/orderListUno.controller.js");
+const { socketsControllerDos } = require("../controller/orderListDos.controller.js");
 
 class Server {
   constructor() {
@@ -13,7 +14,9 @@ class Server {
       mainAdvertising: "/api/v1/mainAdvertising",
       advertising:     "/api/v1/advertising",
       recommendation:  "/api/v1/recommendation",
-      orderList:       "/api/v1/orderList"
+      orderListUno:    "/api/v1/orderListUno",
+      orderListDos:    "/api/v1/orderListDos",
+
     };
 
     this.middlewares();
@@ -27,11 +30,15 @@ class Server {
   }
 
   sockets(){
-    this.io.on("connection", socketsController );
+    this.io.on("connection", socketsControllerUno );
+    this.io.on("connection", socketsControllerDos );
+
   }
 
   router(){
-    this.app.use( this.path.orderList, require("../routes/orderList.routes.js"));
+    this.app.use( this.path.orderListUno, require("../routes/orderListUno.routes.js")),
+    this.app.use( this.path.orderListDos, require("../routes/orderListDos.routes.js"));
+
   }
 
   listen() {
