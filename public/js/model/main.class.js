@@ -19,10 +19,10 @@ class Main {
     this.swiper();
   }
   printRecomendations() {
-    recomendations.forEach(addRecomendatiosHtml);
+    // recomendations.forEach(addRecomendatiosHtml);
   }
   printPopulars() {
-    populars.forEach(addPopularsHtml);
+    // populars.forEach(addPopularsHtml);
   }
   printOrderList() {
     printNewOrder();

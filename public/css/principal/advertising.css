@@ -1,74 +1,25 @@
 /* Publicidad del producto */
 .div-product-advertising {
+  overflow: hidden;
   background-color: var(--grisClaro);
-    height: 45%;
+    height: 60%;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  
+  .modal-publicidad-dos{
+    background-color: #f7faff;
+    width: 100%;
+  }
+  .modal-publicidad-dos .swiper-slide{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
-  
-  .title-product-advertising{
-    padding-left: 5rem;
-  }
-  .title-product-advertising h2{
-    margin: 5rem 0;
-    color: var(--negro);
-    font-size: 8rem;
-  }
-   .products-shake {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(12rem, 1fr));
-    grid-gap: 2rem;
-    margin: 0 5rem;
-  }
-  
-  .card-product {
+  .modal-publicidad-dos img{
+    object-fit:scale-down;
     height: 100%;
-    max-height:16rem;
-    background-color: var(--blanco);
-    border-radius: 2.5rem;
-    border: 2px solid rgba(7, 7, 7, 0.12);
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-  }
-  
-  .div-product-img {
-    overflow: hidden;
-    width: 40%;
-  }
-  
-  .div-product-img img {
-    object-fit: cover;
-    height: 100%;
-  }
-  
-  .div-product-text {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2rem;
-  }
-  .div-product-text h3 {
-    margin: 2rem 0;
-    font-family: var(--fuenteSecundari);
-    font-size: 2.8rem;
-  }
-  .div-product-text .div-description p {
-    margin:0;
-    font-family: var(--fuentePrincipal);
-    font-size: 1rem;
-  
-  }
-  
-  .div-product-text .div-price p {
-    color: var(--blanco);
-    background-color: var(--primario);
-    border-radius: 1rem;
-    font-family: var(--fuentePrecio);
-    font-size: 2.6rem;
-    font-weight: 600;
-    max-width: 50%;
-    text-align: center;
-    margin: 0;
+    width: 100%;
   }
   
