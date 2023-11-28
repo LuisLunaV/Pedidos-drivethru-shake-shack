@@ -60,7 +60,7 @@ import {
       clearAmountOrders();
       clearOrderList();
       clearTotals();
-    }, 15000);
+    }, 20000);
   }
   
   // Función para mostrar el menú principal
@@ -74,7 +74,7 @@ import {
       clearAmountOrders();
       clearOrderList();
       clearTotals();
-    }, 90000);
+    }, 180000);
   }
   
   //Mostrar esfera con la cantidad de productos
