@@ -4,6 +4,8 @@ import {
     addTotals,
     clearOrderList,
     clearTotals,
+    scrollOrderUp,
+    scrollOrderUpConfirm
   } from "../index.js";
   
   // Elementos del DOM
@@ -44,6 +46,7 @@ import {
       addOrdersListCorrectHtml(data);
     });
   
+    scrollOrderUp();
     adjustListSize(newOrder);
     addTotals(newOrder);
   }
@@ -51,6 +54,9 @@ import {
   // Función para manejar la confirmación de la orden
   function orderConfirmed() {
     showConfirmationModal();
+    setTimeout(()=>{
+      scrollOrderUpConfirm();
+    },3000)
     clearTimeout(timer);
   
     // Ocultar la confirmación después de un tiempo y mostrar la publicidad
