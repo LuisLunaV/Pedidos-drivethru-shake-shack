@@ -1,4 +1,3 @@
-import { getOrderList } from "../services/api-call.js";
 import {
   carousel,
   socketsConnection,
@@ -17,9 +16,6 @@ class Main {
   }
   socket() {
     socketsConnection();
-  }
-  servicesApi(){
-    getOrderList();
   }
   swiper() {
     carousel();

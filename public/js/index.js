@@ -4,6 +4,8 @@ import { addPopularsHtml } from "./components/populars.js";
 import { addTotals, clearTotals } from "./components/totals.js";
 
 import { carousel } from "./util/swiper.js";
+import { scrollOrderUp, scrollOrderUpConfirm } from "./util/scorll-order-up.js";
+
 import { socketsConnection } from "./services/socket.cliente.js";
 
 import { getTotal } from "./helper/calculateTheTotal.js";
@@ -18,6 +20,8 @@ export{
     addTotals,
     clearTotals,
     carousel,
+    scrollOrderUp,
+    scrollOrderUpConfirm,
     getTotal,
     socketsConnection,
     printNewOrder
