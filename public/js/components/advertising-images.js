@@ -1,5 +1,4 @@
 import { getAllImages1080x1920, getAllImages1080x1152 } from "../services/api-allImg.js";
-import { carousel } from '../index.js';
 const modalPrincipal = document.querySelector("#publicidad-principal");
 const modalSecundario = document.querySelector("#publicidad-secundaria");
 
@@ -38,8 +37,6 @@ const imagenSecundarialHtml = ( imagen ) => {
   
     principal.forEach(imagenPrincipalHtml);
     secundaria.forEach( imagenSecundarialHtml);
-    //Despues de cargar las imagenes activamos los efectos del carrucel.
-    carousel();
   };
   
 
