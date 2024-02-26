@@ -1,14 +1,16 @@
+import { getOrderList } from "../services/api-call.js";
+import { imprimirPublicidad } from '../components/advertising-images.js';
 import {
-  carousel,
   socketsConnection,
   printNewOrder
 } from "../index.js";
 
 class Main {
   init() {
+    this.printAdvertising();
     this.printOrderList();
     this.socket();
-    this.swiper();
+  
   }
 
   printOrderList() {
@@ -17,9 +19,14 @@ class Main {
   socket() {
     socketsConnection();
   }
-  swiper() {
-    carousel();
+  servicesApi(){
+    getOrderList();
   }
+
+  printAdvertising(){
+    imprimirPublicidad();
+  }
+ 
 }
 
 export { Main };
